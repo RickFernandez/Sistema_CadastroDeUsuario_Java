@@ -1,9 +1,0 @@
-package br.com.bancoxyz.modelo;
-
-public class ContaPoupanca extends Conta {
-	
-	@Override
-	public double veriicarSaldo() {
-		return saldo;
-	}
-}

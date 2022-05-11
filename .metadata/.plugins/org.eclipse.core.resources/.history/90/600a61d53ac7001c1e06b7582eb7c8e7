@@ -1,0 +1,26 @@
+package br.com.master3.beans;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class ListaCadastroUsuario {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		List<CadastroUsuario> newUser = new ArrayList<CadastroUsuario>();
+		
+		newUser.add(new CadastroUsuario(
+				Integer.parseInt(JOptionPane.showInputDialog("Por favor, informe o ID do usuario")),
+				JOptionPane.showInputDialog("Por favor, informe o nome do usuario"),
+				JOptionPane.showInputDialog("Por favor, informe o email do usuario"),
+				JOptionPane.showInputDialog("Por favor, informe uma senha"),
+				JOptionPane.showInputDialog("Por favor, informe o modo como quer ser chamado"),
+		));
+
+
+	}
+
+}

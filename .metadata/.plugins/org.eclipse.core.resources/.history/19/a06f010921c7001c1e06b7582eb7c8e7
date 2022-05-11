@@ -1,0 +1,19 @@
+package br.com.master3.beans;
+
+import java.util.HashMap;
+
+import javax.swing.JOptionPane;
+
+public class MapCadastroUsuario {
+
+	private static HashMap<String, String> newUsuario;
+
+	public static void main(String[] args) {
+		newUsuario = new HashMap<String, String>();
+		
+		newUsuario.put(JOptionPane.showInputDialog("Por favor, informe o seu nome"), JOptionPane.showInputDialog("Por favor, informe seu email"));
+		String newUsuarioNome = newUsuario.get(newUsuario);
+		System.out.println(newUsuarioNome);
+	}
+
+}

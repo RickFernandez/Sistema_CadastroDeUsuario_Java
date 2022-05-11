@@ -1,0 +1,36 @@
+package br.com.master3.beans;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class CollectionCadastroUsuario {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		Collection<CadastroUsuario> newUser = new HashSet<>();
+		int i = 0;
+		String answer = "";
+		int id = 0;
+		
+		do {
+			newUser.add(new CadastroUsuario(
+					Integer.parseInt(id),
+					JOptionPane.showInputDialog("Por favor, informe o seu nome"),
+					JOptionPane.showInputDialog("Por favor, informe o seu email"),
+					JOptionPane.showInputDialog("Por favor, informe uma senha"),
+					JOptionPane.showInputDialog("Por favor, informe como quer ser chamado")
+				));
+			answer = JOptionPane.showInputDialog("Digite <S> para cadastrar um novo usuario").toUpperCase();
+			i++;
+		} while(answer.equals("S"));
+		
+		System.out.println(newUser);
+
+
+	}
+
+}

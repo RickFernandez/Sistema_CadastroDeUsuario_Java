@@ -1,0 +1,26 @@
+package br.com.master3.beans;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class MapCadastrarUsuario {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		HashMap<String, String> newUser = new HashMap<String, String>();
+		String name;
+		String email;
+		
+		do {
+			System.out.println("Por favor, informe o seu nome");
+			name = leitor.next();
+			System.out.println("Por favor, informe o seu email");
+			email = leitor.next();
+			
+		} while ();
+		
+	}
+
+}

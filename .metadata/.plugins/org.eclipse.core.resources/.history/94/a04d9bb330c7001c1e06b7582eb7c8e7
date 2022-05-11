@@ -1,0 +1,39 @@
+package br.com.master3.beans;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class MapCadastrarUsuario {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		HashMap<String, String> newUser = new HashMap<String, String>();
+		int i = 0;
+		String name;
+		String email;
+		String password;
+		String answer = "";
+		
+		do {
+			System.out.println("Informe o nome do usuario");
+			name = leitor.next();
+			System.out.println("Informe o email do usuario");
+			email = leitor.next();
+			System.out.println("Informe o email do usuario");
+			password = leitor.next();
+			newUser.put(name, email, password);
+			System.out.println("Digite <S> para cadastrar um novo usuario");
+			answer = leitor.next();
+			i++;
+				
+		} while(answer.equalsIgnoreCase("S"));
+		
+		System.out.println(newUser);
+		
+	}
+
+}

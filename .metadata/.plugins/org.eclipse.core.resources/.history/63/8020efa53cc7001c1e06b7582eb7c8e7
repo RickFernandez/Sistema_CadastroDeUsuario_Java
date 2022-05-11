@@ -1,0 +1,26 @@
+package br.com.master3.beans;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class CollectionCadastroUsuario {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		List<PerfilUsuario> newProfile = new ArrayList<>();
+		
+		String answer = "";
+		
+		newProfile.add(new PerfilUsuario(
+				JOptionPane.showInputDialog("Por favor, informe o nivel de acesso do usuario"),
+				
+		));
+
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.master3.beans;
+
+public class MapUsuario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

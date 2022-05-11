@@ -1,0 +1,20 @@
+package br.com.master3.beans;
+
+import java.util.HashMap;
+
+import javax.swing.JOptionPane;
+
+public class MapCadastrarUsuario {
+
+	public static void main(String[] args) {
+		HashMap<String, String> newUsuario = new HashMap<String, String>();
+		
+		newUsuario.put("Nome", "Henrique");
+		String newUsuarioNome = newUsuario.get("Nome");
+		System.out.println(newUsuarioNome);
+		
+		newUsuario.put("Email", "henrique123@gmail.com");
+		String newUsuarioEmail = newUsuario.get("Email");
+	}
+
+}

@@ -1,0 +1,11 @@
+package br.com.master3.beans;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListCadastrarUsuario {
+	Scanner leitor = new Scanner(System.in);
+	List<CadastroUsuario> newUser = new ArrayList<CadastroUsuario>();
+	
+	newUser.add(new CadastroUsuario());
